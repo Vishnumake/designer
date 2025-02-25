@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .child {
+        background-color: black;
+        width: 31.25rem;
+        height: 31.25rem;
+        background: url(./3d-rendered-illustration-male-doctor-with-mustache-glasses.png);
+        background-size: 100%;
+        transition: 1s;
+        transition-timing-function: cubic-bezier(1, -0.07, 0.38, 0.99);
+        background-position: center;
+        border: .125rem solid black;
+    }
+
+    .child:hover {
+        background-size: 150%;
+        background-position: center;
+    }
+
+
+   #first {
+        width: 100%;
+        height: 100vh;
+        background: url('./3d-rendered-illustration-male-doctor-with-mustache-glasses.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .image {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.439);
+    }
+
+    .image img {
+        width: 100%;
+        height: 100vh;
+    }
+   
+    .section{
+display: flex;
+width:100%;
+height:100vh;
+    }
+    .map{
+        width:50%;
+        height:100vh;
+    }
+    .form{
+        width:50%;
+        height:auto;
+    }
+    .form img{
+        width:100%;
+        height:auto;
+    }
+.map iframe{
+    width:100%;
+    height:inherit;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .section{
+display: flex;
+background-color: aquamarine;
+flex-direction: column;
+width:100%;
+height:100vh;
+    }
+    .map{
+        width:100%;
+        height:100vh;
+    }
+    .form{
+        width:100%;
+        height:auto;
+    }
+}
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+
+        <section id="first">
+            <div class="image">
+                <img src="./3d-rendered-illustration-male-doctor-with-mustache-glasses.png" alt="">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5249.98325970342!2d2.294481!3d48.85837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1740110556851!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form">
+                <img src="./3d-rendered-illustration-male-doctor-with-mustache-glasses.png" alt="">
+            </div>
+        </section>
+</body>
+
+</html>
